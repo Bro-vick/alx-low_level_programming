@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long int i, x = 2, y = 2, sum = 0, tsum = 0;
+	long int i, x = 1, y = 2, sum = 0, tsum = 0;
 
 	for (i = 0; i < 49; i++)
 	{
