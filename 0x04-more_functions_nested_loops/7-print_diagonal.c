@@ -1,11 +1,11 @@
 #include "main.h"
 
-/*
- * print_diagonal - draws a diagonal line on the terminal
- * @n: input value
- * 
- * Return: Always 0 (Success)
- */
+/**
+  * print_diagonal - draws a diagonal line on the terminal
+  * @n: input value
+  *
+  * Return: Always 0 (Success)
+  */
 void print_diagonal(int n)
 {
 	int count = 0, size;
