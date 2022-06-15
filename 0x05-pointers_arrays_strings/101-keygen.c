@@ -3,8 +3,8 @@
 #include <time.h>
 
 /**
- * main - generates random password for 101-crackme
- * Return: 0
+ *  generates random password for 101-crackme
+ *  Return: 0
  */
 int main(void)
 {
@@ -15,21 +15,25 @@ int main(void)
 	srand(time(NULL));
 	while (s != 2772)
 	{
-		j = rand() % 62;
-		p[i] = c[j];
-		s += c[j];
-		i++;
-	}
-	while(c[k])
-	{
-		if (c[k] == (2772 - s))
+		i = k = s = 0;
+		while ((2772 - 122) > s)
 		{
-			p[i] = c[k];
-			s += c[k];
+			j = rand() % 62;
+			p[i] = c[j];
+			s += c[j];
 			i++;
-			break;
 		}
-		k++;
+		while(c[k])
+		{
+			if (c[k] == (2772 - s))
+			{
+				p[i] = c[k];
+				s += c[k];
+				i++;
+				break;
+			}
+			k++
+		}
 	}
 	p[i] = '\0';
 	printf("%s", p);
