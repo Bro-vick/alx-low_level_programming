@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- *  generates random password for 101-crackme
+ *  main - generates random password for 101-crackme
  *  Return: 0
  */
 int main(void)
@@ -23,7 +23,7 @@ int main(void)
 			s += c[j];
 			i++;
 		}
-		while(c[k])
+		while (c[k])
 		{
 			if (c[k] == (2772 - s))
 			{
@@ -32,7 +32,7 @@ int main(void)
 				i++;
 				break;
 			}
-			k++
+			k++;
 		}
 	}
 	p[i] = '\0';
