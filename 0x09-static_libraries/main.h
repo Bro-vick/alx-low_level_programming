@@ -1,6 +1,5 @@
-#ifndef main_FUNC
-#define main_FUNC
-#include <stdio.h>
+#ifndef main_H
+#define main_H
 
 int _putchar(char c);
 int _islower(int c);
