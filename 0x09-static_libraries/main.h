@@ -1,6 +1,5 @@
 #ifndef main_FUNC
 #define main_FUNC
-
 #include <stdio.h>
 
 int _putchar(char c);
