@@ -1,1 +1,1 @@
-A folde on malloc free
+A folder on malloc free
