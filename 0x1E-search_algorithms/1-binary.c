@@ -1,16 +1,13 @@
 #include "search_algos.h"
 
 /**
- * Binary search ALgorithm
- * 1) Initialize the variables  start: to 0,end: to n -1,and the midpoint: would be (start + end)/2  
- * 2) compare if the array[mid] at the midpoint is the target return array[mid]
- * 3) if array[mid] is < the target assign first to mid + 1
- * 4) if array[mid] is > the target assign end to mid - 1
- * for example array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
- * start = 
- * new array = [6, 7, 8, 9, 10]
+ * binary_search - searches for a value in a sorted arrayay of
+ * integers using the Binary search algorithm
+ * @array: pointer to the first element of the array to search in
+ * @size: number of elements in array
+ * @value: value to search for
+ * Return: first index where value is located or -1 otherwise
 */
-
 int binary_search(int *array, size_t size, int value)
 {
 	int i, start, end, mid;

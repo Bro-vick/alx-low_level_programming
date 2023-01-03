@@ -3,17 +3,15 @@
 #include "search_algos.h"
 
 /**
- * main - Entry point
- *
- * Return:
- *
- * Search Algorithm
- * 1) Loop through the array
-/ 2) compare each index to the target value
-// 3) if the value at an index matches the target return the index
-// 4) if the value is not present in the array or if it is null, return -1 
-*/
-int linear_search(int *array, size_t size, int value){
+ * linear_search - searches for a value in
+ * an array of integers using the Linear search algorithm
+ * @array: pointer to the first element of the array to search in
+ * @size:  number of elements in array
+ * @value: value to search for
+ * Return: 1 where value is located or -1 otherwise
+ */
+int linear_search(int *array, size_t size, int value)
+{
 	size_t i;
 
 	for (i = 0; i < size; i++)
@@ -23,9 +21,4 @@ int linear_search(int *array, size_t size, int value){
 			return (i);
 	}
 	return (-1);
-}	
-
-
-
-
-
+}
